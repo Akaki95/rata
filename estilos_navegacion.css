@@ -1,0 +1,57 @@
+
+.nav_container{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+}
+
+.nav-link{
+    margin-left: 15px;
+    margin-right: 15px;
+    text-decoration: none;
+    color: black;
+    background-color: silver;
+    font-size: 28px;
+    font-weight: bold;
+    border: 3px solid black;
+    padding: 10px;
+}   
+
+.comun,.capricho,.p_negocio,.g_negocio,.mercado {
+    border-radius: 10px;
+    transition: transform 0.4s ease-in-out, background-color 0.4s ease-in-out, border-color 0.4s ease-in-out;
+}
+
+.comun:hover {
+  transform: scale(1.2);
+  background-color: rgb(255, 215, 0);
+  border-color: white;
+}
+
+.capricho:hover {
+  transform: scale(1.2);
+  background-color: rgb(255, 101, 101);
+  border-color: white;
+}
+
+.p_negocio:hover{
+    transform: scale(1.2);
+    background-color: rgb(100, 240, 100);
+    border-color: white;
+}
+
+.g_negocio:hover{
+    transform: scale(1.2);
+    background-color: rgb(40, 200, 40);
+    border-color: white; 
+}
+
+.mercado:hover{
+    transform: scale(1.2);
+    background-color: rgb(60, 150, 240);
+    border-color: white;  
+}

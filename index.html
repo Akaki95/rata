@@ -1,0 +1,2049 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablero de Jugadores</title>
+    <link rel="stylesheet" href="estilos_index.css">
+    <link rel="stylesheet" href="estilos_navegacion.css">
+</head>
+
+<body>
+    <header>
+
+        <div class="nav_container">
+
+            <nav class="nav">
+                <a class="nav-link comun" onclick="goToIndex()" href="#">Inicio</a>
+                <a class="nav-link comun" onclick="goToTablero()" href="#">Tablero</a>
+                <a class="nav-link capricho" onclick="goToCapricho()" href="#">Capricho</a>
+                <a class="nav-link p_negocio" onclick="goToNegocito()" href="#">Pequeño Negocio</a>
+                <a class="nav-link g_negocio" onclick="goToNegocion()" href="#">Gran Negocio</a>
+                <a class="nav-link mercado" onclick="goToMercado()" href="#">Mercado</a>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+
+        <div class="" id="index">
+
+            <button class="p_nueva" onclick="goToSeleccion()">PARTIDA NUEVA</button>
+
+            <button class="re_partida">REANUDAR PARTIDA</button>
+
+        </div>
+
+        <div id="seleccion">
+
+        </div>
+
+        <div id="formulario">
+
+        </div>
+
+        <div id="tablero">
+            <div id="container-jugadores">
+                <!-- Aquí se generarán los contenedores individuales de los jugadores -->
+            </div>
+        </div>
+
+        <div id="capricho">
+
+
+            <div class="titulos">
+                <p>CAPRICHOS</p>
+            </div>
+
+            <div class="contenedor_capricho">
+
+                <div class="carta_capricho" id="capricho-1">
+                    <span class="tituloCarta">BOLA DE BOLOS NUEVA</span>
+                    <div>
+                        <span>PAGUE $</span>
+                        <span class="valor">100</span>
+                    </div>
+                </div>
+                <div class="carta_capricho" id="capricho-2">
+                    <span class="tituloCarta">PROCESADOR DE ALIMENTOS</span>
+                    <div>
+                        <span>PAGUE $</span>
+                        <span class="valor">200</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="negocito">
+
+
+            <div class="titulos">
+                <p>ACCIONES</p>
+            </div>
+
+            <div class="contenedor-acciones">
+
+                <div class="carta" id="1-GRO4US">
+                    <div class="titulo">
+                        <p>Fondo común de inversión - Fondo GRO4US</p>
+                    </div>
+                    <p>El informe de ganancias mínimas conduce a un precio débil del fondo común de inversón.
+                    </p>
+                    <p class="textoComun">Sólo usted puede comprar tantas acciones como desee a este precio. Todos pueden vender a este precio.
+                    </p>
+                    <div class="condiciones">
+                        <div class="partes">
+                            <p>Símbolo:</p>
+                            <span>GRO4US</span>
+                        </div>
+                        <div class="partes">
+                            <p>Precio de hoy:</p>
+                            <span>5</span>
+                        </div>
+                    </div>
+                    <div class="partes_especiales">
+                        <p>Banda de precios bursátiles histórica: </p>
+                        <span>$20 - $30</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="titulos">
+                <p>APUESTAS</p>
+            </div>
+
+            <div class="contenedor-apuestas">
+
+                <div class="carta" id="caja">
+                    <div class="titulo">
+                        <p>¿Qué hay en la caja?</p>
+                    </div>
+                    <p>Tiene la opción de comprar un archivador cerrado en una venta de bienes raíces.
+                    </p>
+                    <p class="textoComun">Si compra el archivador, pague $500 y tire 1 dado:
+                    </p>
+                    <div>
+                        <div class="partes">
+                            <p>Dado = 1 - 5, No encuentra absolutamente nada en el archivador.</p>
+                        </div>
+                        <div class="partes">
+                            <p>Dado = 6, Encuentra diez (10) monedas de oro. ¡Clink caja! Agréguelas a su hoja de Activos.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="style_costo">
+                        <p>Costo: </p>
+                        <span>500</span>
+                    </div>
+                </div>
+                <div class="carta" id="prestamo">
+
+                </div>
+                <div class="carta" id="testamento">
+
+                </div>
+
+            </div>
+
+            <div class="titulos">
+                <p>CASAS</p>
+            </div>
+
+            <div class="contenedor-casas">
+
+                <div class="carta" id="casa-1">
+                    <div class="titulo">
+                        <p>Casa en venta -</p>
+                        <span>2</span>
+                        <p>hab. y </p>
+                        <span>1</span>
+                        <p>baños</p>
+                    </div>
+                    <p>Nadie ha vivido en los últimos seis meses en esta casa, cuya Hipoteca acaba de ser ejecutada por el banco, por lo que se ha bajado su precio. El préstamo incluye los costos de reparación estimados.
+                    </p>
+                    <p class="textoComun">Use esta oportunidad usted mismo o véndela a otro jugador.</p>
+                    <div class="condiciones_casas">
+                        <div class="partes">
+                            <p>Costo: $</p>
+                            <span>50000</span>
+                        </div>
+                        <div class="partes">
+                            <p>Hipoteca: $</p>
+                            <span>48000</span>
+                        </div>
+                        <div class="partes">
+                            <p>Pago inicial: $</p>
+                            <span>2000</span>
+                        </div>
+                        <div class="partes">
+                            <p>Cashflow: +$</p>
+                            <span>200</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carta" id="casa-2">
+
+                </div>
+                <div class="carta" id="casa-3">
+
+                </div>
+                <div class="carta" id="casa-4">
+
+                </div>
+                <div class="carta" id="casa-5">
+
+                </div>
+                <div class="carta" id="casa-6">
+
+                </div>
+                <div class="carta" id="casa-7">
+
+                </div>
+
+            </div>
+
+            <div class="titulos">
+                <p>COLECCION</p>
+            </div>
+
+            <div class="contenedor-coleccion">
+
+                <div class="carta" id="coleccion-5">
+                    <div class="titulo">
+                        <p>Coleccionista de monedas liquida</p>
+                    </div>
+                    <p>Un coleccionista de monedas necesita dinero en efectivo rápido para resolver un problema impositivo. Le venderá 5 monedas de oro, muy por debajo de lo que se suele pagar.
+                    </p>
+                    <p class="textoComun">Use esta oportunidad usted mismo o véndela a otro jugador.
+                    </p>
+                    <div class="style_coleccion">
+                        <div class="style_costo">
+                            <p>Costo: </p>
+                            <span>500</span>
+                        </div>
+                        <div class="style_costo">
+                            <p>Monedas de oro: </p>
+                            <span>5</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="carta" id="coleccion-10">
+
+                </div>
+
+            </div>
+
+            <div class="titulos">
+                <p>CONDOMINIOS</p>
+            </div>
+
+            <div class="contenedor-condominios">
+
+                <div class="carta" id="condominio-1">
+                    <div class="titulo">
+                        <p>Condominio - </p>
+                        <span>2</span>
+                        <p>hab. y </p>
+                        <span>1</span>
+                        <p>baño</p>
+                    </div>
+                    <p>¡El banco procede a la ejecución de la hipoteca! Condominio de 2 hab. y 1 baño en atractivo vecindario cerca de los empleos y las tiendas. Haga su oferta, el banco ofrece un financiamiento favorable.
+                    </p>
+                    <p class="textoComun">Use esta oportunidad usted mismo o véndela a otro jugador.</p>
+                    <div class="condiciones_casas">
+                        <div class="partes">
+                            <p>Costo: $</p>
+                            <span>40000</span>
+                        </div>
+                        <div class="partes">
+                            <p>Hipoteca: $</p>
+                            <span>35000</span>
+                        </div>
+                        <div class="partes">
+                            <p>Pago inicial: $</p>
+                            <span>5000</span>
+                        </div>
+                        <div class="partes">
+                            <p>Cashflow: +$</p>
+                            <span>220</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carta" id="condominio-2">
+
+                </div>
+                <div class="carta" id="condominio-3">
+
+                </div>
+                <div class="carta" id="condominio-4">
+
+                </div>
+
+            </div>
+
+            <div class="titulos">
+                <p>MULTINIVEL</p>
+            </div>
+
+            <div class="contenedor-multinivel">
+
+                <div class="carta_multinivel" id="multinivel-1">
+                    <div class="titulo">
+                        <p>Compra de comercialización de múltiples niveles</p>
+                    </div>
+                    <p>Tiene la oportunidad de invertir en una opción de comercialización de múltiples niveles. La compañía busca apliar el alcance de su más nueva operación.
+                    </p>
+                    <p class="textoComun">Si decide comprar, pague $500 y conserve esta tarjeta: cada Día de pago, tire 1 dado:
+                    </p>
+                    <div>
+                        <div class="partes">
+                            <p>Dado = 1 - 3, No hubo retorno este mes, pero siga intentando.</p>
+                        </div>
+                        <div class="partes">
+                            <p>Dado = 4 - 6, Su capital de esfuerzo ha dado resultado. Recoja $500.
+                            </p>
+                        </div>
+                    </div>
+                    <p class="textoComun">Use esta oportunidad usted mismo o véndela a otro jugador.
+                    </p>
+                    <div class="style_costo">
+                        <p>Costo: </p>
+                        <span>500</span>
+                    </div>
+                </div>
+                <div class="carta_multinivel" id="multinivel-2">
+
+                </div>
+
+            </div>
+        </div>
+
+        <div id="negocion">
+            <div class="imagen_g_negocio">
+                <img src="imagenes/gran_negocio.JPG" alt="gran negocio">
+            </div>
+
+            <div class="titulos">
+                <p>CASAS</p>
+            </div>
+
+            <div class="contenedor-casa">
+
+                <div class="carta" id="casa-1">
+                    <div class="titulo">
+                        <p>Casa en venta -</p>
+                        <span>3</span>
+                        <p>hab. y </p>
+                        <span>2</span>
+                        <p>baños</p>
+                    </div>
+                    <p>Bonita casa de 3 hab. y 2 baños, con piscina a nivel del suelo y todos los electrodomésticos, disponible en área de clase media alta. Buenas escuelas.</p>
+                    <p class="textoComun">Use esta oportunidad usted mismo o véndela a otro jugador.</p>
+                    <div class="condiciones">
+                        <div class="partes">
+                            <p>Costo: $</p>
+                            <span>300000</span>
+                        </div>
+                        <div class="partes">
+                            <p>Hipoteca: $</p>
+                            <span>280000</span>
+                        </div>
+                        <div class="partes">
+                            <p>Pago inicial: $</p>
+                            <span>20000</span>
+                        </div>
+                        <div class="partes">
+                            <p>Cashflow: +$</p>
+                            <span>1000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carta" id="casa-2">
+
+                </div>
+                <div class="carta" id="casa-3">
+
+                </div>
+                <div class="carta" id="casa-4">
+
+                </div>
+                <div class="carta" id="casa-5">
+
+                </div>
+                <div class="carta" id="casa-6">
+
+                </div>
+                <div class="carta" id="casa-7">
+
+                </div>
+                <div class="carta" id="casa-8">
+
+                </div>
+
+            </div>
+
+            <div class="titulos">
+                <p>COMPLEJOS</p>
+            </div>
+
+            <div class="contenedor-complejo">
+
+                <div class="carta" id="complejo-1">
+                    <div class="titulo">
+                        <p>Se vende complejo de</p>
+                        <span>4</span>
+                        <p>unidades</p>
+                    </div>
+                    <p>Se vende complejo de 4 unidades junto a una autopista nueva. El propietario/ocupante se traslada a una zona más silenciosa. Precio para venta rápida.
+                    </p>
+                    <p class="textoComun">Use esta oportunidad usted mismo o véndela a otro jugador.</p>
+                    <div class="condiciones">
+                        <div class="partes">
+                            <p>Costo: $</p>
+                            <span>290000</span>
+                        </div>
+                        <div class="partes">
+                            <p>Hipoteca: $</p>
+                            <span>275000</span>
+                        </div>
+                        <div class="partes">
+                            <p>Pago inicial: $</p>
+                            <span>15000</span>
+                        </div>
+                        <div class="partes">
+                            <p>Cashflow: +$</p>
+                            <span>800</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carta" id="complejo-2">
+
+                </div>
+                <div class="carta" id="complejo-3">
+
+                </div>
+                <div class="carta" id="complejo-4">
+
+                </div>
+                <div class="carta" id="complejo-5">
+
+                </div>
+                <div class="carta" id="complejo-6">
+
+                </div>
+                <div class="carta" id="complejo-7">
+
+                </div>
+                <div class="carta" id="complejo-8">
+
+                </div>
+                <div class="carta" id="complejo-9">
+
+                </div>
+                <div class="carta" id="complejo-10">
+
+                </div>
+
+            </div>
+
+            <div class="titulos">
+                <p>DUPLEX</p>
+            </div>
+
+            <div class="contenedor-duplex">
+
+                <div class="carta" id="duplex-1">
+                    <div class="titulo">
+                        <p>Se vende duplex</p>
+                    </div>
+                    <p>El propietario necesita vender para pagar su deuda con el hospital. Hay dos inquilinos en esta propiedad bien mantenida y es una buena oportunidad de inversión.
+                    </p>
+                    <p class="textoComun">Use esta oportunidad usted mismo o véndela a otro jugador.</p>
+                    <div class="condiciones">
+                        <div class="partes">
+                            <p>Costo: $</p>
+                            <span>260000</span>
+                        </div>
+                        <div class="partes">
+                            <p>Hipoteca: $</p>
+                            <span>248000</span>
+                        </div>
+                        <div class="partes">
+                            <p>Pago inicial: $</p>
+                            <span>12000</span>
+                        </div>
+                        <div class="partes">
+                            <p>Cashflow: +$</p>
+                            <span>600</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carta" id="duplex-2">
+
+                </div>
+                <div class="carta" id="duplex-3">
+
+                </div>
+                <div class="carta" id="duplex-4">
+
+                </div>
+                <div class="carta" id="duplex-5">
+
+                </div>
+
+            </div>
+
+            <div class="titulos">
+                <p>EDIFICIOS</p>
+            </div>
+
+            <div class="contenedor-edificio">
+
+                <div class="carta" id="edificio-1">
+                    <div class="titulo_especial">
+                        <p>Se vende edificio de apartamentos</p>
+                        <span>12</span>
+                    </div>
+                    <p>Edificio de apartamentos de 12 unidades ofrecido por los herederos de la persona mantenimiento/propietario, residente en otro estado. Ubicación muy atractiva con una larga lista de espera para las unidades de departamentos en esta
+                        propiedad.
+                    </p>
+                    <p class="textoComun">Use esta oportunidad usted mismo o véndela a otro jugador.</p>
+                    <div class="condiciones">
+                        <div class="partes">
+                            <p>Costo: $</p>
+                            <span>350000</span>
+                        </div>
+                        <div class="partes">
+                            <p>Hipoteca: $</p>
+                            <span>300000</span>
+                        </div>
+                        <div class="partes">
+                            <p>Pago inicial: $</p>
+                            <span>50000</span>
+                        </div>
+                        <div class="partes">
+                            <p>Cashflow: +$</p>
+                            <span>3000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carta" id="edificio-2">
+
+                </div>
+                <div class="carta" id="edificio-3">
+
+                </div>
+                <div class="carta" id="edificio-4">
+
+                </div>
+
+            </div>
+
+            <div class="titulos">
+                <p>NEGOCIOS</p>
+            </div>
+
+            <div class="contenedor-negocio">
+
+                <div class="carta" id="negocio-1">
+                    <div class="titulo">
+                        <p>Negocio automatizado</p>
+                    </div>
+                    <p>Exitoso lavadero para 4 automóviles operado con monedas cerca de una concurrida intersección de calles. El propietario se traslada a una comunidad para adultos mayores fuera del estado.
+                    </p>
+                    <p class="textoComun">Use esta oportunidad usted mismo o véndela a otro jugador.</p>
+                    <div class="condiciones">
+                        <div class="partes">
+                            <p>Costo: $</p>
+                            <span>125000</span>
+                        </div>
+                        <div class="partes">
+                            <p>Hipoteca: $</p>
+                            <span>100000</span>
+                        </div>
+                        <div class="partes">
+                            <p>Pago inicial: $</p>
+                            <span>25000</span>
+                        </div>
+                        <div class="partes">
+                            <p>Cashflow: +$</p>
+                            <span>1800</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carta" id="negocio-2">
+
+                </div>
+                <div class="carta" id="negocio-3">
+
+                </div>
+                <div class="carta" id="negocio-4">
+
+                </div>
+                <div class="carta" id="negocio-5">
+
+                </div>
+                <div class="carta" id="negocio-6">
+
+                </div>
+                <div class="carta" id="negocio-7">
+
+                </div>
+                <div class="carta" id="negocio-8">
+
+                </div>
+                <div class="carta" id="negocio-9">
+
+                </div>
+
+            </div>
+        </div>
+
+        <div id="mercado">
+            <div class="imagen_mercado">
+                <img src="imagenes/mercado.JPG" alt="mercado">
+            </div>
+
+            <div class="titulos">
+                <p>ACCIONES</p>
+            </div>
+
+            <div class="contenedor-acciones">
+
+                <div class="carta" id="GRO4US">
+                    <div class="titulo">
+                        <p>Acción de Fondo GRO4US</p>
+                    </div>
+                    <p>El mercado se encuentra ene stado de cambio y habrá monumentales altibajos en el mercado en los próximos meses. ¿Cómo terminarán los fondos mutuos en este tiempo de cambios?
+                    </p>
+                    <p class="textoComun">El titular de la tarjeta tira 1 dado
+                    </p>
+                    <div>
+                        <div class="partes">
+                            <p>Dado = 1 - 3, Dobla acciones.
+                            </p>
+                        </div>
+                        <div class="partes">
+                            <p>Dado = 4 - 6, Pierde la mitad.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carta" id="MYT4U">
+
+                </div>
+                <div class="carta" id="OK4U">
+
+                </div>
+                <div class="carta" id="ON2U">
+
+                </div>
+
+            </div>
+
+            <div class="titulos">
+                <p>BONUS</p>
+            </div>
+
+            <div class="contenedor-bonus">
+
+                <div class="carta" id="bonus-1">
+                    <div class="titulo">
+                        <p>Auge de Pequeños negocios</p>
+                    </div>
+                    <p>"¡La economía regional estalló!" TODOS se ven afectados.
+                    </p>
+                    <p class="textoComun">TODOS los negocios con un flujo de efectivo de $1000, o menos, aumentan su flujo de efectivo en $250.
+                    </p>
+                    <div class="style_bonus">
+                        <p>Aumento: $ </p>
+                        <span>250</span>
+                    </div>
+                </div>
+                <div class="carta" id="bonus-2">
+                    <div class="titulo">
+                        <p>Nuevo sistema de administración</p>
+                    </div>
+                    <p>Un nuevo sistema de administración crea eficiencias y reduce costos. Solo se ve afectada la persona que tomó la carta.
+                    </p>
+                    <p class="textoComun">TODOS los negocios con un flujo de efectivo de $1000, o menos, aumentan su flujo de efectivo en $400.
+                    </p>
+                    <div class="style_bonus">
+                        <p>Aumento: $ </p>
+                        <span>400</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="titulos">
+                <p>COLECCIONES</p>
+            </div>
+
+            <div class="contenedor-colecciones">
+
+                <div class="carta" id="coleccion-1">
+                    <div class="titulo">
+                        <p>Coleccionista desea monedas de oro</p>
+                    </div>
+                    <p>Próspero coleccionista busca monedas de oro. Oferta de dinero en efectivo de $500 por cada moneda.
+                    </p>
+                    <p class="textoComun">Todos pueden vender cualquier cantidad de monedas a ese precio.
+                    </p>
+                    <div class="style_bonus">
+                        <p>Precio venta: $ </p>
+                        <span>500</span>
+                    </div>
+                </div>
+                <div class="carta" id="coleccion-2">
+
+                </div>
+                <div class="carta" id="coleccion-3">
+
+                </div>
+                <div class="carta" id="coleccion-4">
+
+                </div>
+
+            </div>
+
+            <div class="titulos">
+                <p>CASAS</p>
+            </div>
+
+            <div class="contenedor-casas">
+
+                <div class="carta" id="casa-1">
+                    <div class="titulo">
+                        <p>Comprador casa -</p>
+                        <span>2</span>
+                        <p>hab. y </p>
+                        <span>1</span>
+                        <p>baño</p>
+                    </div>
+                    <p>Comprador busca adquirir alquileres de 2 hab. y 1 baño. Ofrece su costo original más 10%.
+                    </p>
+                    <p class="textoComun">Todos pueden vender cualquier cantidad de propiedades a este precio.
+                    </p>
+                    <p>Si vende, pague la hipoteca relacionada y renuncie al flujo de efectivo de esta propiedad.
+                    </p>
+                    <div class="style_bonus">
+                        <p>Precio venta costo original +</p>
+                        <span>10</span>
+                        <p>%</p>
+                    </div>
+                </div>
+                <div class="carta" id="casa-2">
+
+                </div>
+                <div class="carta" id="casa-3">
+
+                </div>
+                <div class="carta" id="casa-4">
+
+                </div>
+                <div class="carta" id="casa-5">
+
+                </div>
+                <div class="carta" id="casa-6">
+                    <div class="titulo">
+                        <p>Comprador casa -</p>
+                        <span>3</span>
+                        <p>hab. y </p>
+                        <span>2</span>
+                        <p>baño</p>
+                    </div>
+                    <p>Comprador busca una casa de 3 hab. y 2 baños. Ofrece su costo original más $5000.
+                    </p>
+                    <p class="textoComun">Todos pueden vender cualquier cantidad de propiedades a este precio.
+                    </p>
+                    <p>Si vende, pague la hipoteca relacionada y renuncie al flujo de efectivo de esta propiedad.
+                    </p>
+                    <div class="style_bonus">
+                        <p>Precio venta costo original + $</p>
+                        <span>10</span>
+                    </div>
+                </div>
+                <div class="carta" id="casa-7">
+
+                </div>
+                <div class="carta" id="casa-8">
+
+                </div>
+                <div class="carta" id="casa-9">
+
+                </div>
+
+            </div>
+
+            <div class="titulos">
+                <p>CONDOMINIOS</p>
+            </div>
+
+            <div class="contenedor-condominios">
+
+                <div class="carta" id="condominio-1">
+                    <div class="titulo">
+                        <p>casa o condominio -</p>
+                        <span>2</span>
+                        <p>h. y </p>
+                        <span>1</span>
+                        <p>baño</p>
+                    </div>
+                    <p>Le ofrecen $45000 por un condominio o una casa de 2 hab. y 1 baño. El comprador cuenta con financiamiento propio.
+                    </p>
+                    <p class="textoComun">Todos pueden vender a este precio.
+                    </p>
+                    <p>Si vende, pague la hipoteca relacionada y renuncie al flujo de efectivo de esta propiedad.
+                    </p>
+                    <div class="style_bonus">
+                        <p>Oferta: $</p>
+                        <span>45000</span>
+                    </div>
+                </div>
+                <div class="carta" id="condominio-2">
+
+                </div>
+
+            </div>
+
+            <div class="titulos">
+                <p>COMPLEJOS</p>
+            </div>
+
+            <div class="contenedor-complejos">
+
+                <div class="carta" id="complejo-1">
+                    <div class="titulo">
+                        <p>Comprador de complejos</p>
+                    </div>
+                    <p>Comprador busca todos los departamentos y complejos con cualquier combinación de unidades. Ofrece su costo original más $1000.
+                    </p>
+                    <p class="textoComun">Todos pueden vender cualquier cantidad de propiedades a este precio.
+                    </p>
+                    <p>Si vende, pague la hipoteca relacionada y renuncie al flujo de efectivo de esta propiedad.
+                    </p>
+                    <div class="style_bonus">
+                        <p>Coste original + $</p>
+                        <span>1000</span>
+                    </div>
+                </div>
+                <div class="carta" id="complejo-2">
+
+                </div>
+                <div class="carta" id="complejo-3">
+
+                </div>
+                <div class="carta" id="complejo-4">
+
+                </div>
+                <div class="carta" id="complejo-5">
+
+                </div>
+                <div class="carta" id="complejo-6">
+
+                </div>
+                <div class="carta" id="complejo-7">
+                    <div class="titulo">
+                        <p>Comprador de complejos</p>
+                    </div>
+                    <p>Comprador busca todos los departamentos y complejos con cualquier combinación de unidades. Ofrece su costo original más 5%.
+                    </p>
+                    <p class="textoComun">Todos pueden vender cualquier cantidad de propiedades a este precio.
+                    </p>
+                    <p>Si vende, pague la hipoteca relacionada y renuncie al flujo de efectivo de esta propiedad.
+                    </p>
+                    <div class="style_bonus">
+                        <p>Coste original + </p>
+                        <span>5</span>
+                        <p>%</p>
+                    </div>
+                </div>
+                <div class="carta" id="complejo-8">
+
+                </div>
+                <div class="carta" id="complejo-9">
+
+                </div>
+                <div class="carta" id="complejo-10">
+
+                </div>
+
+            </div>
+
+            <div class="titulos">
+                <p>EDIFICIOS</p>
+            </div>
+
+            <div class="contenedor-edificios">
+
+                <div class="carta" id="edificio-1">
+                    <div class="titulo">
+                        <p>Comprador de edificio de apartamentos</p>
+                    </div>
+                    <p>Un comprador ofrece $25000 por unidad para todas las unidades en un edificio de apartamentos de cualquier tamaño.
+                    </p>
+                    <p class="textoComun">Todos pueden vender a este precio.
+                    </p>
+                    <p>Si vende, pague la hipoteca relacionada y renuncie al flujo de efectivo de esta propiedad.
+                    </p>
+                    <div class="style_bonus">
+                        <p>Oferta por unidad: $</p>
+                        <span>25000</span>
+                    </div>
+                </div>
+                <div class="carta" id="edificio-2">
+
+                </div>
+                <div class="carta" id="edificio-3">
+
+                </div>
+                <div class="carta" id="edificio-4">
+
+                </div>
+
+            </div>
+
+            <div class="titulos">
+                <p>DAÑOS</p>
+            </div>
+
+            <div class="contenedor-danos">
+
+                <div class="carta_danos" id="dano-1">
+                    <div class="titulo">
+                        <p>El inquilino hace daños a su propiedad</p>
+                    </div>
+                    <p>El inquilino se rehúsa a pagar el alquiler. Luego de que el inquilino es desalojado, usted descubre daños significativos a su propiedad. El seguro cubre la mayor parte de las reparaciones, pero aún así, usted debe pagar $500 (una vez).
+                    </p>
+                    <p class="textoComun">La tarjeta se aplica solo a la persona que la tomó. Si NO posee bienes raíces, ignore esta tarjeta.
+                    </p>
+                    <div class="style_bonus">
+                        <p>Pague: $</p>
+                        <span>500</span>
+                    </div>
+                </div>
+                <div class="carta" id="dano-2">
+
+                </div>
+                <div class="carta" id="dano-3">
+
+                </div>
+                <div class="carta" id="dano-4">
+
+                </div>
+                <div class="carta" id="dano-5">
+
+                </div>
+
+
+            </div>
+        </div>
+
+        <div id="profesiones">
+
+            <div class="contenedor-profesiones">
+
+                <div class="titulos">
+                    <p>PROFESIONES</p>
+                </div>
+
+                <div class="carta" id="conserje">
+                    <div class="cabecera">
+                        <p>Su profesión es</p>
+                        <span>CONSERJE</span>
+                    </div>
+                    <div class="cuerpo">
+                        <div class="ingresos">
+                            <div class="titulo_interior">
+                                <p>Ingresos</p>
+                            </div>
+                            <div class="grupos">
+                                <p>Salario:</p>
+                                <div class="ing_act">
+                                    <p>$</p>
+                                    <span>1600</span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="gastos">
+                            <div class="titulo_interior">
+                                <p>Gastos</p>
+                            </div>
+                            <div class="grupos">
+                                <div class="parejas">
+                                    <p>Impuestos: $</p>
+                                    <span>300</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Pago de la hipoteca de su hogar: $</p>
+                                    <span>200</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Pago de préstamo educativo: $</p>
+                                    <span>0</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Pago de préstamo para automóvil: $</p>
+                                    <span>100</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Pago con tarjeta de crédito: $</p>
+                                    <span>100</span>
+                                </div>
+                                <div>
+                                    <p>otros gastos: $</p>
+                                    <span>300</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Gasto por hijo: $</p>
+                                    <span>100</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="activos">
+                            <div class="titulo_interior">
+                                <p>Activos</p>
+                            </div>
+                            <div class="grupos">
+                                <p>Ahorros:</p>
+                                <div class="ing_act">
+                                    <p>$</p>
+                                    <span>600</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="pasivos">
+                            <div class="titulo_interior">
+                                <p>Pasivos</p>
+                            </div>
+                            <div class="grupos">
+                                <div class="parejas">
+                                    <p>Hipoteca de la casa: $</p>
+                                    <span>20000</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Préstamos educativos: $</p>
+                                    <span>0</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Préstamos para autmóvil: $</p>
+                                    <span>4000</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Deuda de tarjeta de crédito: $</p>
+                                    <span>3000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carta" id="mecanico">
+                    <div class="cabecera">
+                        <p>Su profesión es</p>
+                        <span>MECÁNICO</span>
+                    </div>
+                    <div class="cuerpo">
+                        <div class="ingresos">
+                            <div class="titulo_interior">
+                                <p>Ingresos</p>
+                            </div>
+                            <div class="grupos">
+                                <p>Salario:</p>
+                                <div class="ing_act">
+                                    <p>$</p>
+                                    <span>2000</span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="gastos">
+                            <div class="titulo_interior">
+                                <p>Gastos</p>
+                            </div>
+                            <div class="grupos">
+                                <div class="parejas">
+                                    <p>Impuestos: $</p>
+                                    <span>400</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Pago de la hipoteca de su hogar: $</p>
+                                    <span>300</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Pago de préstamo educativo: $</p>
+                                    <span>0</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Pago de préstamo para automóvil: $</p>
+                                    <span>100</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Pago con tarjeta de crédito: $</p>
+                                    <span>100</span>
+                                </div>
+                                <div>
+                                    <p>otros gastos: $</p>
+                                    <span>400</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Gasto por hijo: $</p>
+                                    <span>100</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="activos">
+                            <div class="titulo_interior">
+                                <p>Activos</p>
+                            </div>
+                            <div class="grupos">
+                                <p>Ahorros:</p>
+                                <div class="ing_act">
+                                    <p>$</p>
+                                    <span>700</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pasivos">
+                            <div class="titulo_interior">
+                                <p>Pasivos</p>
+                            </div>
+                            <div class="grupos">
+                                <div class="parejas">
+                                    <p>Hipoteca de la casa: $</p>
+                                    <span>31000</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Préstamos educativos: $</p>
+                                    <span>0</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Préstamos para autmóvil: $</p>
+                                    <span>3000</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Deuda de tarjeta de crédito: $</p>
+                                    <span>3000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carta" id="conductor">
+                    <div class="cabecera">
+                        <p>Su profesión es</p>
+                        <span>CONDUCTOR DE CAMIÓN</span>
+                    </div>
+                    <div class="cuerpo">
+                        <div class="ingresos">
+                            <div class="titulo_interior">
+                                <p>Ingresos</p>
+                            </div>
+                            <div class="grupos">
+                                <p>Salario:</p>
+                                <div class="ing_act">
+                                    <p>$</p>
+                                    <span>2500</span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="gastos">
+                            <div class="titulo_interior">
+                                <p>Gastos</p>
+                            </div>
+                            <div class="grupos">
+                                <div class="parejas">
+                                    <p>Impuestos: $</p>
+                                    <span>500</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Pago de la hipoteca de su hogar: $</p>
+                                    <span>400</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Pago de préstamo educativo: $</p>
+                                    <span>0</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Pago de préstamo para automóvil: $</p>
+                                    <span>100</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Pago con tarjeta de crédito: $</p>
+                                    <span>100</span>
+                                </div>
+                                <div>
+                                    <p>otros gastos: $</p>
+                                    <span>600</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Gasto por hijo: $</p>
+                                    <span>200</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="activos">
+                            <div class="titulo_interior">
+                                <p>Activos</p>
+                            </div>
+                            <div class="grupos">
+                                <p>Ahorros:</p>
+                                <div class="ing_act">
+                                    <p>$</p>
+                                    <span>800</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pasivos">
+                            <div class="titulo_interior">
+                                <p>Pasivos</p>
+                            </div>
+                            <div class="grupos">
+                                <div class="parejas">
+                                    <p>Hipoteca de la casa: $</p>
+                                    <span>38000</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Préstamos educativos: $</p>
+                                    <span>0</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Préstamos para autmóvil: $</p>
+                                    <span>4000</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Deuda de tarjeta de crédito: $</p>
+                                    <span>3000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carta" id="secretario">
+                    <div class="cabecera">
+                        <p>Su profesión es</p>
+                        <span>SECRETARIO</span>
+                    </div>
+                    <div class="cuerpo">
+                        <div class="ingresos">
+                            <div class="titulo_interior">
+                                <p>Ingresos</p>
+                            </div>
+                            <div class="grupos">
+                                <p>Salario:</p>
+                                <div class="ing_act">
+                                    <p>$</p>
+                                    <span>2500</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gastos">
+                            <div class="titulo_interior">
+                                <p>Gastos</p>
+                            </div>
+                            <div class="grupos">
+                                <div class="parejas">
+                                    <p>Impuestos: $</p>
+                                    <span>500</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Pago de la hipoteca de su hogar: $</p>
+                                    <span>400</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Pago de préstamo educativo: $</p>
+                                    <span>0</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Pago de préstamo para automóvil: $</p>
+                                    <span>100</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Pago con tarjeta de crédito: $</p>
+                                    <span>100</span>
+                                </div>
+                                <div>
+                                    <p>otros gastos: $</p>
+                                    <span>600</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Gasto por hijo: $</p>
+                                    <span>100</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="activos">
+                            <div class="titulo_interior">
+                                <p>Activos</p>
+                            </div>
+                            <div class="grupos">
+                                <p>Ahorros:</p>
+                                <div class="ing_act">
+                                    <p>$</p>
+                                    <span>700</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pasivos">
+                            <div class="titulo_interior">
+                                <p>Pasivos</p>
+                            </div>
+                            <div class="grupos">
+                                <div class="parejas">
+                                    <p>Hipoteca de la casa: $</p>
+                                    <span>38000</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Préstamos educativos: $</p>
+                                    <span>0</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Préstamos para autmóvil: $</p>
+                                    <span>4000</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Deuda de tarjeta de crédito: $</p>
+                                    <span>3000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carta" id="policia">
+                    <div class="cabecera">
+                        <p>Su profesión es</p>
+                        <span>POLICÍA</span>
+                    </div>
+                    <div class="cuerpo">
+                        <div class="ingresos">
+                            <div class="titulo_interior">
+                                <p>Ingresos</p>
+                            </div>
+                            <div class="grupos">
+                                <p>Salario:</p>
+                                <div class="ing_act">
+                                    <p>$</p>
+                                    <span>3000</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gastos">
+                            <div class="titulo_interior">
+                                <p>Gastos</p>
+                            </div>
+                            <div class="grupos">
+                                <div class="parejas">
+                                    <p>Impuestos: $</p>
+                                    <span>600</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Pago de la hipoteca de su hogar: $</p>
+                                    <span>400</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Pago de préstamo educativo: $</p>
+                                    <span>0</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Pago de préstamo para automóvil: $</p>
+                                    <span>100</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Pago con tarjeta de crédito: $</p>
+                                    <span>100</span>
+                                </div>
+                                <div>
+                                    <p>otros gastos: $</p>
+                                    <span>700</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Gasto por hijo: $</p>
+                                    <span>200</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="activos">
+                            <div class="titulo_interior">
+                                <p>Activos</p>
+                            </div>
+                            <div class="grupos">
+                                <p>Ahorros:</p>
+                                <div class="ing_act">
+                                    <p>$</p>
+                                    <span>500</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pasivos">
+                            <div class="titulo_interior">
+                                <p>Pasivos</p>
+                            </div>
+                            <div class="grupos">
+                                <div class="parejas">
+                                    <p>Hipoteca de la casa: $</p>
+                                    <span>46000</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Préstamos educativos: $</p>
+                                    <span>0</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Préstamos para autmóvil: $</p>
+                                    <span>5000</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Deuda de tarjeta de crédito: $</p>
+                                    <span>3000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carta" id="enfermero">
+                    <div class="cabecera">
+                        <p>Su profesión es</p>
+                        <span>ENFERMERO</span>
+                    </div>
+                    <div class="cuerpo">
+                        <div class="ingresos">
+                            <div class="titulo_interior">
+                                <p>Ingresos</p>
+                            </div>
+                            <div class="grupos">
+                                <p>Salario:</p>
+                                <div class="ing_act">
+                                    <p>$</p>
+                                    <span>3100</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gastos">
+                            <div class="titulo_interior">
+                                <p>Gastos</p>
+                            </div>
+                            <div class="grupos">
+                                <div class="parejas">
+                                    <p>Impuestos: $</p>
+                                    <span>600</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Pago de la hipoteca de su hogar: $</p>
+                                    <span>400</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Pago de préstamo educativo: $</p>
+                                    <span>100</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Pago de préstamo para automóvil: $</p>
+                                    <span>100</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Pago con tarjeta de crédito: $</p>
+                                    <span>200</span>
+                                </div>
+                                <div>
+                                    <p>otros gastos: $</p>
+                                    <span>600</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Gasto por hijo: $</p>
+                                    <span>200</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="activos">
+                            <div class="titulo_interior">
+                                <p>Activos</p>
+                            </div>
+                            <div class="grupos">
+                                <p>Ahorros:</p>
+                                <div class="ing_act">
+                                    <p>$</p>
+                                    <span>500</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pasivos">
+                            <div class="titulo_interior">
+                                <p>Pasivos</p>
+                            </div>
+                            <div class="grupos">
+                                <div class="parejas">
+                                    <p>Hipoteca de la casa: $</p>
+                                    <span>47000</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Préstamos educativos: $</p>
+                                    <span>6000</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Préstamos para autmóvil: $</p>
+                                    <span>5000</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Deuda de tarjeta de crédito: $</p>
+                                    <span>4000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carta" id="maestro">
+                    <div class="cabecera">
+                        <p>Su profesión es</p>
+                        <span>MAESTRO</span>
+                    </div>
+                    <div class="cuerpo">
+                        <div class="ingresos">
+                            <div class="titulo_interior">
+                                <p>Ingresos</p>
+                            </div>
+                            <div class="grupos">
+                                <p>Salario:</p>
+                                <div class="ing_act">
+                                    <p>$</p>
+                                    <span>3300</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gastos">
+                            <div class="titulo_interior">
+                                <p>Gastos</p>
+                            </div>
+                            <div class="grupos">
+                                <div class="parejas">
+                                    <p>Impuestos: $</p>
+                                    <span>500</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Pago de la hipoteca de su hogar: $</p>
+                                    <span>500</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Pago de préstamo educativo: $</p>
+                                    <span>100</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Pago de préstamo para automóvil: $</p>
+                                    <span>100</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Pago con tarjeta de crédito: $</p>
+                                    <span>200</span>
+                                </div>
+                                <div>
+                                    <p>otros gastos: $</p>
+                                    <span>700</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Gasto por hijo: $</p>
+                                    <span>200</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="activos">
+                            <div class="titulo_interior">
+                                <p>Activos</p>
+                            </div>
+                            <div class="grupos">
+                                <p>Ahorros:</p>
+                                <div class="ing_act">
+                                    <p>$</p>
+                                    <span>400</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pasivos">
+                            <div class="titulo_interior">
+                                <p>Pasivos</p>
+                            </div>
+                            <div class="grupos">
+                                <div class="parejas">
+                                    <p>Hipoteca de la casa: $</p>
+                                    <span>50000</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Préstamos educativos: $</p>
+                                    <span>12000</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Préstamos para autmóvil: $</p>
+                                    <span>5000</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Deuda de tarjeta de crédito: $</p>
+                                    <span>4000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carta" id="gerente">
+                    <div class="cabecera">
+                        <p>Su profesión es</p>
+                        <span>GERENTE COMERCIAL</span>
+                    </div>
+                    <div class="cuerpo">
+                        <div class="ingresos">
+                            <div class="titulo_interior">
+                                <p>Ingresos</p>
+                            </div>
+                            <div class="grupos">
+                                <p>Salario:</p>
+                                <div class="ing_act">
+                                    <p>$</p>
+                                    <span>4600</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gastos">
+                            <div class="titulo_interior">
+                                <p>Gastos</p>
+                            </div>
+                            <div class="grupos">
+                                <div class="parejas">
+                                    <p>Impuestos: $</p>
+                                    <span>900</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Pago de la hipoteca de su hogar: $</p>
+                                    <span>700</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Pago de préstamo educativo: $</p>
+                                    <span>100</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Pago de préstamo para automóvil: $</p>
+                                    <span>100</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Pago con tarjeta de crédito: $</p>
+                                    <span>200</span>
+                                </div>
+                                <div>
+                                    <p>otros gastos: $</p>
+                                    <span>1000</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Gasto por hijo: $</p>
+                                    <span>300</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="activos">
+                            <div class="titulo_interior">
+                                <p>Activos</p>
+                            </div>
+                            <div class="grupos">
+                                <p>Ahorros:</p>
+                                <div class="ing_act">
+                                    <p>$</p>
+                                    <span>400</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pasivos">
+                            <div class="titulo_interior">
+                                <p>Pasivos</p>
+                            </div>
+                            <div class="grupos">
+                                <div class="parejas">
+                                    <p>Hipoteca de la casa: $</p>
+                                    <span>75000</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Préstamos educativos: $</p>
+                                    <span>12000</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Préstamos para autmóvil: $</p>
+                                    <span>6000</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Deuda de tarjeta de crédito: $</p>
+                                    <span>4000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carta" id="ingeniero">
+                    <div class="cabecera">
+                        <p>Su profesión es</p>
+                        <span>INGENIERO</span>
+                    </div>
+                    <div class="cuerpo">
+                        <div class="ingresos">
+                            <div class="titulo_interior">
+                                <p>Ingresos</p>
+                            </div>
+                            <div class="grupos">
+                                <p>Salario:</p>
+                                <div class="ing_act">
+                                    <p>$</p>
+                                    <span>4900</span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="gastos">
+                            <div class="titulo_interior">
+                                <p>Gastos</p>
+                            </div>
+                            <div class="grupos">
+                                <div class="parejas">
+                                    <p>Impuestos: $</p>
+                                    <span>1000</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Pago de la hipoteca de su hogar: $</p>
+                                    <span>700</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Pago de préstamo educativo: $</p>
+                                    <span>100</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Pago de préstamo para automóvil: $</p>
+                                    <span>200</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Pago con tarjeta de crédito: $</p>
+                                    <span>200</span>
+                                </div>
+                                <div>
+                                    <p>otros gastos: $</p>
+                                    <span>200</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Gasto por hijo: $</p>
+                                    <span>200</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="activos">
+                            <div class="titulo_interior">
+                                <p>Activos</p>
+                            </div>
+                            <div class="grupos">
+                                <p>Ahorros:</p>
+                                <div class="ing_act">
+                                    <p>$</p>
+                                    <span>400</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pasivos">
+                            <div class="titulo_interior">
+                                <p>Pasivos</p>
+                            </div>
+                            <div class="grupos">
+                                <div class="parejas">
+                                    <p>Hipoteca de la casa: $</p>
+                                    <span>75000</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Préstamos educativos: $</p>
+                                    <span>12000</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Préstamos para autmóvil: $</p>
+                                    <span>7000</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Deuda de tarjeta de crédito: $</p>
+                                    <span>5000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carta" id="abogado">
+                    <div class="cabecera">
+                        <p>Su profesión es</p>
+                        <span>ABOGADO</span>
+                    </div>
+                    <div class="cuerpo">
+                        <div class="ingresos">
+                            <div class="titulo_interior">
+                                <p>Ingresos</p>
+                            </div>
+                            <div class="grupos">
+                                <p>Salario:</p>
+                                <div class="ing_act">
+                                    <p>$</p>
+                                    <span>7500</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gastos">
+                            <div class="titulo_interior">
+                                <p>Gastos</p>
+                            </div>
+                            <div class="grupos">
+                                <div class="parejas">
+                                    <p>Impuestos: $</p>
+                                    <span>1800</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Pago de la hipoteca de su hogar: $</p>
+                                    <span>1100</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Pago de préstamo educativo: $</p>
+                                    <span>300</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Pago de préstamo para automóvil: $</p>
+                                    <span>200</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Pago con tarjeta de crédito: $</p>
+                                    <span>200</span>
+                                </div>
+                                <div>
+                                    <p>otros gastos: $</p>
+                                    <span>1500</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Gasto por hijo: $</p>
+                                    <span>400</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="activos">
+                            <div class="titulo_interior">
+                                <p>Activos</p>
+                            </div>
+                            <div class="grupos">
+                                <p>Ahorros:</p>
+                                <div class="ing_act">
+                                    <p>$</p>
+                                    <span>2000</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pasivos">
+                            <div class="titulo_interior">
+                                <p>Pasivos</p>
+                            </div>
+                            <div class="grupos">
+                                <div class="parejas">
+                                    <p>Hipoteca de la casa: $</p>
+                                    <span>115000</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Préstamos educativos: $</p>
+                                    <span>78000</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Préstamos para autmóvil: $</p>
+                                    <span>11000</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Deuda de tarjeta de crédito: $</p>
+                                    <span>7000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carta" id="piloto">
+                    <div class="cabecera">
+                        <p>Su profesión es</p>
+                        <span>PILOTO DE AEROLÍNEA</span>
+                    </div>
+                    <div class="cuerpo">
+                        <div class="ingresos">
+                            <div class="titulo_interior">
+                                <p>Ingresos</p>
+                            </div>
+                            <div class="grupos">
+                                <p>Salario:</p>
+                                <div class="ing_act">
+                                    <p>$</p>
+                                    <span>9500</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gastos">
+                            <div class="titulo_interior">
+                                <p>Gastos</p>
+                            </div>
+                            <div class="grupos">
+                                <div class="parejas">
+                                    <p>Impuestos: $</p>
+                                    <span>2000</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Pago de la hipoteca de su hogar: $</p>
+                                    <span>1000</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Pago de préstamo educativo: $</p>
+                                    <span>0</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Pago de préstamo para automóvil: $</p>
+                                    <span>300</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Pago con tarjeta de crédito: $</p>
+                                    <span>700</span>
+                                </div>
+                                <div>
+                                    <p>otros gastos: $</p>
+                                    <span>2000</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Gasto por hijo: $</p>
+                                    <span>400</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="activos">
+                            <div class="titulo_interior">
+                                <p>Activos</p>
+                            </div>
+                            <div class="grupos">
+                                <p>Ahorros:</p>
+                                <div class="ing_act">
+                                    <p>$</p>
+                                    <span>2500</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pasivos">
+                            <div class="titulo_interior">
+                                <p>Pasivos</p>
+                            </div>
+                            <div class="grupos">
+                                <div class="parejas">
+                                    <p>Hipoteca de la casa: $</p>
+                                    <span>90000</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Préstamos educativos: $</p>
+                                    <span>0</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Préstamos para autmóvil: $</p>
+                                    <span>15000</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Deuda de tarjeta de crédito: $</p>
+                                    <span>22000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carta" id="medico">
+                    <div class="cabecera">
+                        <p>Su profesión es</p>
+                        <span>MÉDICO</span>
+                    </div>
+                    <div class="cuerpo">
+                        <div class="ingresos">
+                            <div class="titulo_interior">
+                                <p>Ingresos</p>
+                            </div>
+                            <div class="grupos">
+                                <p>Salario:</p>
+                                <div class="ing_act">
+                                    <p>$</p>
+                                    <span>13200</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gastos">
+                            <div class="titulo_interior">
+                                <p>Gastos</p>
+                            </div>
+                            <div class="grupos">
+                                <div class="parejas">
+                                    <p>Impuestos: $</p>
+                                    <span>3200</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Pago de la hipoteca de su hogar: $</p>
+                                    <span>1900</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Pago de préstamo educativo: $</p>
+                                    <span>700</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Pago de préstamo para automóvil: $</p>
+                                    <span>300</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Pago con tarjeta de crédito: $</p>
+                                    <span>200</span>
+                                </div>
+                                <div>
+                                    <p>otros gastos: $</p>
+                                    <span>2000</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Gasto por hijo: $</p>
+                                    <span>700</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="activos">
+                            <div class="titulo_interior">
+                                <p>Activos</p>
+                            </div>
+                            <div class="grupos">
+                                <p>Ahorros:</p>
+                                <div class="ing_act">
+                                    <p>$</p>
+                                    <span>3500</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pasivos">
+                            <div class="titulo_interior">
+                                <p>Pasivos</p>
+                            </div>
+                            <div class="grupos">
+                                <div class="parejas">
+                                    <p>Hipoteca de la casa: $</p>
+                                    <span>202000</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Préstamos educativos: $</p>
+                                    <span>150000</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Préstamos para autmóvil: $</p>
+                                    <span>19000</span>
+                                </div>
+                                <div class="parejas">
+                                    <p>Deuda de tarjeta de crédito: $</p>
+                                    <span>10000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="script_index.js"></script>
+</body>
+
+</html>
